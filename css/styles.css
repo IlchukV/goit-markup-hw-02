@@ -1,35 +1,44 @@
 
 /* встановлюэмо фон і шрифт */
 body {
-    font-family: 'Roboto' 'Raleway', sans-serif;
-    background-color: #fff;
-    
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+        }
+
+:root {
+    --link-color:#2196F3;
+}   
+
+:root {
+    --text-color: #212121;
+}
+:root {
+    --background-color: #FFFFFF;
+}
+:root {
+    --link-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 a {
     text-decoration: none;
-    color: #212121;
-}
-
-a:hover {
-    color: #2196F3;
-    /* Колір посилання при наведенні на нього курсора миші */
-    text-decoration: underline;
-    /* Додаємо підкреслення */
-}
-
-button {border:none;}
-
-button:hover {
-    background: #2196F3;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        color: #FFFFFF;
+        
 }
 
 ul {
-        list-style: none;
+    list-style: none;
       }
+
+.link a{
+    color: #212121;
+}
+.link a:hover,
+.link a:focus {
+    color: var(--link-color);
+}
 
 .header {
     position: absolute;
@@ -37,31 +46,29 @@ ul {
     height: 80px;
     left: 0px;
     top: 0px;
-    background: #FFFFFF;
+    background-color: var(--background-color);
 }
 
 .webstudio-header {
     position: absolute;
-    width: 145px;
+    width: 150px;
     height: 30px;
     left: 215px;
     top: 25px;
-
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #2196F3;
 }
 
 .web {
-    color: #2196F3
+    color: var(--link-color)
 }
 
 .studio {
-    color: #FFFFFF
+    color: var(--background-color)
 }
 
 .studio-nav {
@@ -78,9 +85,9 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--link-color);
     }
 
 .about-link {
@@ -95,7 +102,7 @@ ul {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text-color);
 }
 
 .contact-link {
@@ -125,7 +132,6 @@ ul {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #2196F3;
 }
 
 .tel-link {
@@ -139,8 +145,7 @@ ul {
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        letter-spacing: 0.02em;    
-        color: #757575;
+        letter-spacing: 0.02em;  
 }
 
 .hero {
@@ -150,18 +155,18 @@ ul {
         height: 600px;
         left: 0px;
         top: 80px;    
-        background: #2F303A;
+        background-color: #2F303A;
 }
 
 .title-1 {
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
+        line-height: 1.4;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;    
-        color: #FFFFFF;
+        color: var(--background-color) ;
             position: absolute;
             width: 696px;
             height: 120px;
@@ -170,16 +175,21 @@ ul {
 }
 
 .button-1 {
+    font-family: inherit;
     position: absolute;
     width: 216px;
     height: 50px;
     left: 692px;
     top: 350px;
-    background: #2196F3;
+    background-color: var(--link-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer
-}
+    color: var(--background-color);
+    cursor: pointer;
+    }
+
+.button-1:hover,
+.button-1:focus {}
 
 .about-backgraund {
 
@@ -188,22 +198,23 @@ ul {
     height: 766px;
     left: 0px;
     top: 680px;        
-    background: #F5F5F5;
+    background-color: #F5F5F5;
+}
+
+.features {
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
 .feature-1 {
 
-    position: absolute;
-    width: 270px;
-    height: 72px;
-    left: 215px;
-    top: 800px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+        position: absolute;
+        width: 270px;
+        height: 72px;
+        left: 215px;
+        top: 800px;
 }
 
 .feature-2 {
@@ -213,12 +224,6 @@ ul {
     height: 48px;
     left: 515px;
     top: 800px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
 }
 
 .feature-3 {
@@ -228,12 +233,6 @@ ul {
     height: 48px;
     left: 815px;
     top: 800px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
 }
 
 .feature-4 {
@@ -243,12 +242,11 @@ ul {
     height: 72px;
     left: 1115px;
     top: 800px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+}
+
+.title-hide {
+
+    opacity: 0;
 }
 
 .h3 {
@@ -259,9 +257,8 @@ ul {
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;    
-        color: #212121;
-}
-
+        color: var(--text-color);
+       }
 
 .title2 {
 
@@ -273,10 +270,10 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
 }
 
 .photo1 {
@@ -300,14 +297,14 @@ ul {
     top: 1058px;
 }
 
-.backgraund {
+.backgraund-team {
 
     position: absolute;
         width: 1600px;
         height: 648px;
         left: 0px;
         top: 1446px;    
-        background: #F5F4FA;
+        background-color: #F5F4FA;
 }
 
 .title3 {
@@ -323,7 +320,7 @@ ul {
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;    
-        color: #212121;
+        color: var(--text-color);
 }
 
 
@@ -381,10 +378,10 @@ position: absolute;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
 }
 
 .text-foto {
@@ -392,7 +389,7 @@ position: absolute;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
@@ -403,10 +400,10 @@ position: absolute;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
 }
 
 .text-foto1 {
@@ -414,7 +411,7 @@ position: absolute;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
@@ -426,58 +423,13 @@ position: absolute;
     height: 31px;
     left: 215px;
     top: 60px;
-    font-family: 'Raleway';
+    font-family: 'Raleway'; sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: #2196F3;
-}
-
-.address-line {
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;    
-        color: #FFFFFF;
-        position: absolute;
-            width: 230px;
-            height: 20px;
-            left: 215px;
-            top: 110px;
-}
-
-.mail-line {
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em; 
-    color: rgba(255, 255, 255, 0.6);    
-    position: absolute;
-        left: 215px;
-        top: 140px;
-        width: 230px;
-            height: 20px;
-}
-
-.tel-line {
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-        position: absolute;
-            left: 215px;
-            top: 170px;
-            width: 230px;
-            height: 20px;
 }
 
 .footer {
@@ -486,201 +438,170 @@ position: absolute;
     height: 252px;
     left: 0px;
     top: 2094px;
-    background: #2F303A;
+    background-color: #2F303A;
 
+}
+
+.address {
+    position: absolute;
+    font-style: normal;
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 90px;
+    margin-left: 180px;
+    width: 340px;
+    height: 20px;
+   ;
+}
+
+.link-footer a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link-footer a:hover,
+.link-footer a:focus {
+    color: var(--background-color);
 }
 
 /* Portfolio */
 
-.button-all {
-            position: absolute;
-            width: 73px;
-            height: 38px;
-            left: 512px;
-            top: 174px;
-        background: #F5F4FA;
-        border-radius: 4px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 26px;
-                text-align: center;
-                letter-spacing: 0.03em;            
-                color: #212121;
-                cursor: pointer;
-}
-.button-web {
-    position: absolute;
-        width: 125px;
-        height: 38px;
-        left: 593px;
-        top: 174px;    
-        background: #F5F4FA;
-        border-radius: 4px;
-        font-family: 'Roboto';
-        font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;        
-            color: #212121;
-            cursor: pointer;
-}
-.button-app {
-    position: absolute;
-    width: 112px;
-    height: 38px;
-    left: 726px;
-    top: 174px;
+.pointers button {
+position: absolute;
+top: 174px;
+height: 38px;
     background: #F5F4FA;
     border-radius: 4px;
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.03em;    
-        color: #212121;
-        cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+border: none;
+cursor: pointer;
+}
+
+.pointers button:hover,
+.pointers button:focus {
+    background-color: var(--link-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        color: var(--background-color);
+}
+
+.button-all {
+            
+width: 73px;
+left: 512px;
+                
+}
+.button-web {
+        width: 125px;
+        left: 593px;
+    }
+            
+.button-app {
+    width: 112px;
+    left: 726px;
+        
 }
 .button-design {
-    position: absolute;
     width: 103px;
-    height: 38px;
     left: 846px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px; 
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.03em;    
-        color: #212121;
-        cursor: pointer;
 }
 .button-marketing {
-        position: absolute;
         width: 130px;
-        height: 38px;
         left: 957px;
-        top: 174px;    
-        background: #F5F4FA;
-        border-radius: 4px;
-        font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;        
-            color: #212121;
-            cursor: pointer;
+            
+}
+
+.projet {
+box-sizing: border-box;
+background: var(--background-color);
+border: 1px solid #EEEEEE;
 }
 
 .projet-1 {
-    box-sizing: border-box;
     position: absolute;
     width: 370px;
     height: 404px;
     left: 215px;
     top: 262px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
 }
 
 .projet-2 {
 
-    box-sizing: border-box;
     position: absolute;
     width: 370px;
     height: 404px;
     left: 615px;
     top: 262px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
 }
+
 .projet-3 {
 
-        box-sizing: border-box;
         position: absolute;
         width: 370px;
         height: 404px;
         left: 1015px;
         top: 262px;
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
-.projet-4 {
 
-        box-sizing: border-box;    
+.projet-4 {
+ 
         position: absolute;
         width: 370px;
         height: 404px;
         left: 215px;
         top: 696px;    
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
-.projet-5 {
 
-        box-sizing: border-box;    
+.projet-5 {
+   
         position: absolute;
         width: 370px;
         height: 404px;
         left: 615px;
         top: 696px;    
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
-.projet-6 {
 
-        box-sizing: border-box;    
+.projet-6 {
+   
         position: absolute;
         width: 370px;
         height: 404px;
         left: 1015px;
         top: 696px;
     
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
-.projet-7 {
-        box-sizing: border-box;    
+
+.projet-7 {   
         position: absolute;
         width: 370px;
         height: 404px;
         left: 215px;
         top: 1130px;    
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
-.projet-8 {
 
-         box-sizing: border-box;    
+.projet-8 {
+   
         position: absolute;
         width: 370px;
         height: 404px;
         left: 615px;
-        top: 1130px;    
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
+        top: 1130px;     
 }
-.projet-9 {
 
-        box-sizing: border-box;    
+.projet-9 {
+   
         position: absolute;
         width: 370px;
         height: 404px;
         left: 1015px;
-        top: 1130px;    
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
+        top: 1130px;        
 }
 
 .title-projets {
@@ -693,9 +614,9 @@ position: absolute;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--text-color);
 }
 
 .text-projets {
@@ -708,9 +629,8 @@ position: absolute;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
-    color: #757575;
 }
 
 .footer-portfolio {
