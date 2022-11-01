@@ -1,4 +1,22 @@
 
+
+/* color themes */
+:root {
+    --link-color: #2196F3;
+    --text-color: #212121;
+    --studio-nav-color: #000000;
+    --text-main-color: #757575;
+    --background-color: #FFFFFF;
+    --link-footer-color: rgba(255, 255, 255, 0.6);
+    --footer-portfolio-color: #2F303A;
+    --about-backgraund-color: #F5F5F5;
+    --backgraund-team-color: #F5F4FA;
+    --projet-border-color: #EEEEEE;
+    --box-shadow: rgba(0, 0, 0, 0.12);
+    --main-button-color: #188CE8;
+    --box-shadow-main-button: rgba(0, 0, 0, 0.12);
+}
+
 /* встановлюэмо фон і шрифт */
 body {
     font-family: 'Roboto', sans-serif;
@@ -6,111 +24,79 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-main-color);
         }
 
-:root {
-    --link-color:#2196F3;
-}   
 
-:root {
-    --text-color: #212121;
-}
-:root {
-    --background-color: #FFFFFF;
-}
-:root {
-    --link-footer-color: rgba(255, 255, 255, 0.6);
-}
-
-a {
+.underline {
     text-decoration: none;
-        
-}
+        }
 
-ul {
+.list {
     list-style: none;
       }
 
-.link a{
-    color: #212121;
+/* Nav */
+.nav-link a{
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    color: var(--text-color);
 }
-.link a:hover,
-.link a:focus {
+.nav-link a:hover,
+.nav-link a:focus {
     color: var(--link-color);
 }
+
+.link-contact a {
+    color: var(--text-main-color);
+}
+
+.link-contact a:hover,
+.link-contact a:focus {
+    color: var(--link-color);
+}
+
 
 .header {
    
     background-color: var(--background-color);
 }
 
-.webstudio-header {    
+.nav-webstudio-header {    
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 
 .web {
-    color: var(--link-color)
+    color: var(--link-color);
 }
 
 .studio {
-    color: var(--background-color)
+    color: var(--background-color);
 }
 
 .studio-nav {
-    color: #000000
+    color: var(--studio-nav-color);
 }
 
-.studio-text {
-    font-style: normal;
+.mailto-link,
+.tel-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--link-color);
-    }
-
-.about-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
+letter-spacing: 0.02em;
 }
 
-.contact-link { 
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;    
-        color: var(--text-color);
-}
-
-.mailto-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
-
-.tel-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;  
-}
-
+/* hero */
 .hero {  
-        background-color: #2F303A;
+        background-color: var(--footer-portfolio-color);
 }
 
-.title-1 {
-        font-style: normal;
+.hero-title {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.4;
@@ -120,58 +106,46 @@ ul {
         color: var(--background-color) ;
 }
 
-.button-1 {
+.hero-button {
     font-family: inherit;
-    background-color: var(--link-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+        background-color: var(--link-color);
+    box-shadow: 0px 4px 4px var(--box-shadow-main-button);
     border-radius: 4px;
     color: var(--background-color);
     cursor: pointer;
     }
 
-.button-1:hover,
-.button-1:focus {}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--main-button-color);
+    box-shadow: 0px 4px 4px var(--box-shadow-main-button);
+    border-radius: 4px
+}
 
 .about-backgraund {   
-    background-color: #F5F5F5;
+    background-color: var(--about-backgraund-color);
 }
 
+/* features */
 .features {
-
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 
-.feature-1 {
+.feature-title {
 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--text-color);
 }
 
-.feature-2 {
-}
-
-.feature-3 {
-}
-
-.feature-4 {
-}
-
-.title-hide {
-
-    opacity: 0;
-}
-
-.h3 {
-
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;    
-        color: var(--text-color);
-       }
-
-.title2 {
+.work-title,
+.team-title {
 
     font-weight: 700;
     font-size: 36px;
@@ -181,134 +155,46 @@ ul {
     color: var(--text-color);
 }
 
-.photo1 {
-
-}
-
-.photo2 {
-}
-
-.photo3 {
-
-}
-
-.backgraund-team {
+/* team */
+.team {
   
-        background-color: #F5F4FA;
+background-color: var(--backgraund-team-color);
 }
 
-.title3 { 
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.03em;    
-        color: var(--text-color);
-}
-
-
-.product {  
-        background: var(--background-color);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-card {  
+        background-color: var(--background-color);
+        box-shadow: 0px 1px 3px var(--box-shadow), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
 
-.frontend {
-    background: var(--background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
 
-.marketing {
-    background: var(--background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.designer {
-    background: var(--background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.title-foto {
-    color: rgb(255, 119, 119);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
-
-.text-foto {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.title-foto1 {
+.team-title-foto {
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
 
-.text-foto1 {
-    font-weight: 400;
+.team-text-foto {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.webstudio-footer {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--link-color);
-}
-
-.footer {
-    background-color: #2F303A;
-
-}
-
-.address {
-        font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-
-.link-footer a{
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.link-footer a:hover,
-.link-footer a:focus {
-    color: var(--background-color);
+    color: var(--text-main-color);
 }
 
 /* Portfolio */
 
+
+/* pointers */
 .pointers button {
-    background: #F5F4FA;
+    background-color: var(--backgraund-team-color);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 border: none;
 cursor: pointer;
@@ -322,64 +208,55 @@ cursor: pointer;
         color: var(--background-color);
 }
 
-.button-all {}
-.button-web {}
-            
-.button-app {}
-
-.button-design {}
-
-.button-marketing {}
-
+/* projets */
 .projet {
 box-sizing: border-box;
 background: var(--background-color);
-border: 1px solid #EEEEEE;
+border: 1px solid var(--projet-border-color);
+
 }
 
-.projet-1 {
-}
-
-.projet-2 {
-}
-
-.projet-3 {
-}
-
-.projet-4 { 
-}
-
-.projet-5 { 
-}
-
-.projet-6 {
-    
-}
-
-.projet-7 {     
-}
-
-.projet-8 { 
-}
-
-.projet-9 {      
-}
-
-.title-projets {
+.section-projects-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
     color: var(--text-color);
 }
 
-.text-projets {
-    font-weight: 400;
+.section-projects-text {
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
 }
 
+/* footer */
 .footer-portfolio {
-        background: #2F303A;
+        background: var(--footer-portfolio-color);
+}
+
+.webstudio-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--link-color);
+}
+
+.footer {
+    background-color: var(--footer-portfolio-color);
+
+}
+
+.address {
+    font-size: 14px;
+        font-style: normal;
+}
+
+.link-footer a {
+    color: var(--link-footer-color);
+}
+
+.link-footer a:hover,
+.link-footer a:focus {
+    color: var(--background-color);
 }
